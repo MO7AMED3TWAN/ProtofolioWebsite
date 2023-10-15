@@ -1036,7 +1036,7 @@ footer {
         display: none;
         z-index: 999;
         animation: none;
-        bottom: 0;
+        bottom: 10;
         height: 100%;
     }
 
@@ -1111,11 +1111,11 @@ footer {
 
 @media only screen and (max-width: 350px) {
     #lead-content h1 {
-        font-size: 2.7em !important
+        font-size: 2.4em !important
     }
 
     #lead-content h2 {
-        font-size: 1.4em !important
+        font-size: 1.2em !important
     }
 
     .profile-picture {
@@ -1126,11 +1126,11 @@ footer {
 
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
-        font-size: 2.7em
+        font-size: 2.3em
     }
 
     #lead-content h2 {
-        font-size: 1.4em
+        font-size: 1.2em
     }
 
 
@@ -1150,8 +1150,8 @@ footer {
     }
 
     .profile-picture {
-        width:  180px;
-        height: 180px
+        width:  210px;
+        height: 210px
     }
 }
 
@@ -1441,7 +1441,7 @@ input:checked+.slider:before {
 .scroller {
     width: 0;
     height: 10px;
-    background-color: red;
+    background-color: rgb(69, 158, 176);
     position: fixed;
     z-index: 10000000;
 }
