@@ -1030,7 +1030,7 @@ footer {
     display: none
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
     header {
         position: fixed;
         display: none;
@@ -1051,11 +1051,12 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%
+
     }
 
     #menu li {
         display: block;
-        margin-bottom: 6px
+        margin-bottom: 20px
     }
 
     .menu-links {
@@ -1074,20 +1075,16 @@ footer {
     }
 
     #lead-content h1 {
-        font-size: 4em
+        font-size: 2.7em
     }
 
     #lead-content h2 {
-        font-size: 2.2em
-    }
-
-    #lead-content a {
-        padding: 10px 20px
+        font-size: 1.4em
     }
 
     .profile-picture {
-        width: 270px;
-        height: 270px
+        width: 210px;
+        height: 210px
     }
 
     #lead-down {
@@ -1129,23 +1126,32 @@ footer {
 
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
-        font-size: 3.1em
+        font-size: 2.7em
     }
 
     #lead-content h2 {
-        font-size: 1.7em
+        font-size: 1.4em
     }
 
-    #lead-content a {
-        font-size: 1em;
-        padding: 8px 16px
+
+    .profile-picture {
+        width:  210px;
+        height: 210px
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 720px) {
+    #lead-content h1 {
+        font-size: 2.7em
+    }
+
+    #lead-content h2 {
+        font-size: 1.4em
+    }
+
     .profile-picture {
-        width: 250px;
-        height: 250px
+        width:  180px;
+        height: 180px
     }
 }
 
@@ -1155,7 +1161,7 @@ footer {
     -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
     -moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
-    transition: .5s ease all !important
+    transition: 1.5s ease all !important
 }
 
 .contact-msg {
@@ -1332,7 +1338,7 @@ footer {
     margin: 0 auto;
     position: absolute;
     top: 10px;
-    right: 15px;
+    left: 15px;
     width: 70px;
     height: 34px;
     z-index: 11;
@@ -1341,20 +1347,6 @@ footer {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15)
 }
 
-@media only screen and (max-width: 768px) {
-    .dark-mode-button {
-        margin: 0 auto;
-        position: absolute;
-        top: 10px;
-        left: 75px !important;
-        right: auto !important;
-        width: 70px;
-        height: 34px;
-        z-index: 11;
-        transition: .3s ease all !important;
-        border-radius: 25px
-    }
-}
 
 .dark-mode-button:hover {
     /*transform: scale(1.05);*/
@@ -1444,4 +1436,12 @@ input:checked+.slider:before {
 .about-summary p {
     text-transform: capitalize;
     font-size: 18px;
+}
+
+.scroller {
+    width: 0;
+    height: 10px;
+    background-color: red;
+    position: fixed;
+    z-index: 10000000;
 }
