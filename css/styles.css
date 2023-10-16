@@ -225,7 +225,13 @@ footer {
         width: 100% !important;
         margin-bottom: 5px
     }
-
+    
+    .social0 {
+        order: 2;
+        margin: 8px 0;
+        width: 100% !important;
+        justify-content: center !important
+    }
 
     .social {
         order: 2;
