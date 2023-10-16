@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"  href="/images/AI.png">
     <title>Mohamed Elsayed | Portfolio</title>
     <meta name="title" content="Mohamed Elsayed | Portfolio">
     <meta name="description"
         content="Welcome to my website. I'm Mohamed Elsayed, a AI Engineer. Find out my experience, education, projects, skills and contacts.">
-    <meta name="keywords"
-        content="computer science, artificial intelligence, ai, github, robotics, portfolio, university of kafr elshiekh, cv">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="author" content="Mohamed Elsayed">
@@ -26,13 +25,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="js/scripts.min.js" defer></script>
     <!-- AOS Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- //AOS Library JS -->
     <script type="text/javascript" src="js/aos-init.min.js" defer></script>
-    <script type="text/javascript" src="js/contact-en.min.js" defer></script>
     <script type="text/javascript" src="js/aspect.min.js" defer></script>
+    <script type="text/javascript" src="js/scripts.min.js" defer></script>
+    <script src="./js/main.js"></script>
     <!-- //Scripts -->
 </head>
 
@@ -54,7 +53,7 @@
         <div id="mobile-menu-close"> <i class="fa fa-times" aria-hidden="true"></i></div>
         <ul id="menu" class="shadow">
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#education">Education & Certifications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -82,7 +81,7 @@
         <div id="lead-content">
             <img src="images/me.jpeg" class="profile-picture" alt="" data-aos="fade-up" />
             <h1 data-aos="fade-right" data-aos-offset="40">Mohamed Elsayed</h1>
-            <h2 data-aos="fade-right" data-aos-offset="-70">AI Engineer</h2>
+            <h2 data-aos="fade-right" data-aos-offset="20">AI Engineer</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -109,29 +108,76 @@
         </div>
     </div>
     <!-- End #about -->
+
     <div id="education" class="section-card">
-        <h2 class="heading">Education</h2>
+        <h2 class="heading">Education & Certifications</h2>
+
+        <!-- Kafrelshikh University -->
         <div class="education-block" data-aos="fade-right">
-            <div class="company-logo unibo-logo light"><a href="https://kfs.edu.eg/engkfs/" target="_blank"> <img
+            <div class="company-logo "><a href="https://kfs.edu.eg/engkfs/" target="_blank"> <img
                         src="images\kfs.gif" alt="Website Background" /> </a></div>
             <div>
                 <h3>Kafrelshikh University</h3>
                 <span class="education-date">2021 – 2025</span>
-                <h4 class="with-grade">3nd Level  Bachelor's Programme – "Artificial Intelligence:
-                    <br>
-                    Machine-learning, Deep-Learning, Computer-Vision, NLP"</br>
-                    <!-- <i>Specialization: Machine Learning</i> -->
+                <h4 class="with-grade">3rd Level  At Faculty of Artificial Intelligence "Bachelor's Programme" 
+                    <br/>
+                    <i>Specialization: Machine-learning, Deep-Learning, Computer-Vision, NLP</i>
                 </h4>
-                <p class="final-grade">Final grade: ####</p>
+                <p class="final-grade">Final Grade : ??</p>
                 <ul>
-                        <a href=""
-                            target="_blank">Download (preview)&nbsp;&nbsp;<i class="fas fa-download"></i></a>
+                        <a href="https://kfs.edu.eg/engkfs/"
+                            target="_blank">Preview &nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <!-- LinkedIN -->
+        <div class="education-block" data-aos="fade-right">
+            <div class="company-logo"><a href="https://www.linkedin.com/in/mohamed-elsayed-7aaa81223/" target="_blank"> <img
+                        src="./images/LinkedIn.png" alt="Website Background" /> </a></div>
+            <div>
+                <h3>LinkedIn Profile For All Certifications</h3>
+                <ul>
+                        <a href="https://www.linkedin.com/in/mohamed-elsayed-7aaa81223/"
+                            target="_blank">Preview &nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Machine Learning Specialization -->
+        <div class="education-block" data-aos="fade-right">
+            <div class="company-logo ">
+                <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank"> <img
+                        src="./images/coursera.svg" alt="Website Background" /> </a>
+            </div>
+            <div>
+                <h3>Machine Learning Specialization</h3>
+                <br/>
+                <h4><i>Supervised Machine Learning : Regression and Classification</i></h4>
+                <p class="final-grade">December 7, 2022</p>
+                <p class="final-grade">33 hours (approximately)</p>
+                <p class="final-grade">Grade Achieved: 100%</p>
+                <ul>
+                    <a href="https://coursera.org/share/2ffceaac71c28626d3cb75ab1777016b"
+                        target="_blank">Preview &nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 
+    <!-- Start #skills -->
     <div id="skills" class="section-card">
         <h2 class="heading">Skills</h2>
         <ul>
@@ -188,7 +234,7 @@
     </div>
     <!-- End #skills -->
 
-
+    <!-- Start #projects -->
     <div id="projects" class="background-alt section-card">
         <h2 class="heading">Projects</h2>
         <div class="container">
@@ -246,23 +292,32 @@
     </div>
     <!-- End #projects -->
 
-
-
+    <!-- Start #contact -->
     <div id="contact" class="section-card">
         <h2>Contact me</h2>
         <div id="contact-form">
             
-            <div>
-                <a href="mailto:Mo7amed3twan@gmail.com">
-                <i class="fab fa-google" aria-hidden="true"></i>
-                </a>
-                </div>
-
+            <div class="social0">
+                
                 <div>
-                <a target="_blanck" href="https://wa.me/+0201551209560">
-                <i class="fab fa-whatsapp"></i>
-                </a>
-                </div>
+                    <a href="mailto:Mo7amed3twan@gmail.com">
+                    <i class="fab fa-google" aria-hidden="true"></i>
+                    </a>
+                    </div>
+    
+                    <div>
+                        <a target="_blanck" href="https://t.me/MoSayed">
+                            <i class="fab fa-telegram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                    <a target="_blanck" href="https://wa.me/+0201551209560">
+                    <i class="fab fa-whatsapp"></i>
+                    </a>
+                    </div>
+            </div>
+                
             
 
 
@@ -271,6 +326,7 @@
     </div>
     <!-- End #contact -->
 
+    <!-- Start footer -->
     <footer>
         <div class="footer-wrapper">
             <div class="copyright">
@@ -282,7 +338,7 @@
             <div class="social">
                 
                 <div>
-                <a href="https://www.linkedin.com/in/mohamed-alsayed-7aaa81223/" target="_blank">
+                <a href="https://www.linkedin.com/in/mohamed-elsayed-7aaa81223/" target="_blank">
                 <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 </div>
@@ -305,7 +361,7 @@
     <!-- End footer -->
 
 
-    <script src="./js/main.js"></script>
+    
 </body>
 
 </html>

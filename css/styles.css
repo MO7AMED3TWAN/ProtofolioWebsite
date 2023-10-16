@@ -86,42 +86,6 @@ body.active {
     z-index: -1
 }
 
-.no-js #experience-timeline>div {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    transition: border-color var(--color-mode-transition);
-    border: 1px solid var(--section-border)
-}
-
-.no-js #experience-timeline>div h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    transition: color var(--color-mode-transition);
-    color: var(--section-heading);
-    display: inline-block;
-    margin: 0
-}
-
-.no-js #experience-timeline>div h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    transition: color var(--color-mode-transition);
-    color: var(--paragraph-heading);
-    margin: 0 0 15px 0
-}
-
-.no-js #experience-timeline>div p {
-    transition: color var(--color-mode-transition);
-    color: var(--paragraph-text);
-    font-size: .9em;
-    margin: 0
-}
-
-.no-js #experience-timeline:after,
-.no-js #experience-timeline:before {
-    content: none
-}
 
 @keyframes dropHeader {
     0% {
@@ -262,6 +226,7 @@ footer {
         margin-bottom: 5px
     }
 
+
     .social {
         order: 2;
         margin: 8px 0;
@@ -330,6 +295,21 @@ footer {
     color: var(--footer-text)
 }
 
+.social0 {
+    order: 2;
+    margin: 8px 0;
+    width: 100% !important;
+    justify-content: center !important
+}
+
+.social0 {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle
+}
+
 .social {
     display: flex;
     width: 33.33%;
@@ -338,6 +318,14 @@ footer {
     vertical-align: middle
 }
 
+.social0 a {
+    font-size: 120px;
+    display: block;
+    transition: color var(--color-mode-transition);
+    color: var(--footer-text);
+    padding: 50px;
+    transition: transform .1s !important
+}
 .social a {
     font-size: 20px;
     display: block;
@@ -347,14 +335,30 @@ footer {
     transition: transform .2s !important
 }
 
+.social0 a:hover {
+    transform: scale(1.2);
+    color: #3498db
+}
+
 .social a:hover {
     transform: scale(1.2);
     color: #3498db
 }
 
+.social0 ul {
+    margin: 5px 0 0 0;
+    padding: 0
+}
+
 .social ul {
     margin: 5px 0 0 0;
     padding: 0
+}
+
+.social0 li {
+    display: inline-block;
+    font-size: 1.4em;
+    list-style: none
 }
 
 .social li {
@@ -446,7 +450,7 @@ footer {
 
 #lead-content h2 {
     transition: color var(--color-mode-transition);
-    color: var(--lead-subheading);
+    color: white;
     font-weight: 500;
     font-size: 2em;
     margin-bottom: 15px;
@@ -538,94 +542,24 @@ footer {
     padding-right: 50px
 }
 
-.vtimeline-content {
-    margin-left: 350px;
-    transition: background-color var(--color-mode-transition);
-    background: var(--card-bg);
-    padding: 15px;
-    border-radius: 5px;
-    text-align: left
-}
-
-.vtimeline-content h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    transition: color var(--color-mode-transition);
-    color: var(--section-heading);
-    display: inline-block;
-    margin: 0
-}
-
-.vtimeline-content h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    transition: color var(--color-mode-transition);
-    color: var(--paragraph-heading);
-    margin: 0 0 15px 0
-}
-
-.vtimeline-content p {
-    transition: color var(--color-mode-transition);
-    color: var(--paragraph-text);
-    font-size: .9em;
-    margin: 0
-}
-
-.vtimeline-point {
-    position: relative;
-    display: block;
-    vertical-align: top;
-    margin-bottom: 30px
-}
-
-.vtimeline-icon {
-    position: relative;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    transition: background-color var(--color-mode-transition);
-    background: var(--project-image-bg);
-    border-radius: 50%;
-    float: left;
-    z-index: 99;
-    margin-left: 280px
-}
-
-.vtimeline-icon i {
-    display: block;
-    font-size: 2em;
-    margin-top: 10px
-}
-
-.vtimeline-date {
-    width: 260px;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    font-weight: 300;
-    transition: color var(--color-mode-transition);
-    color: var(--section-heading)
-}
-
-
 #education h2 {
     transition: color var(--color-mode-transition);
     color: var(--section-heading);
     margin-bottom: 50px
 }
 
+
 .education-block {
     transition: background-color var(--color-mode-transition);
     background: var(--card-bg);
-    border-radius: 5px;
+    border-radius: 15px;
     width: 800px;
     margin: 0 auto 30px auto;
     padding: 30px;
     text-align: left;
     transition: .5s ease all !important;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
+    border: 5px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 1 2px 3px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -652,13 +586,21 @@ footer {
     margin: 0 0 15px 0
 }
 
-.education-block p,
+.education-block p{
+    margin: 0;
+    transition: color var(--color-mode-transition);
+    color: var(--paragraph-text);
+    font-size: .9em;
+    text-align: left;
+
+}
 .education-block ul {
     margin: 0;
     transition: color var(--color-mode-transition);
     color: var(--paragraph-text);
     font-size: .9em;
-    text-align: justify;
+    text-align: right;
+
 }
 
 .education-block ul {
@@ -963,31 +905,6 @@ footer {
     padding: 0 0 0 15px
 }
 
-@media only screen and (max-width: 750px) {
-
-    #experience-timeline:after,
-    #experience-timeline:before {
-        left: 23px
-    }
-
-    .vtimeline-date {
-        width: auto;
-        text-align: left;
-        position: relative;
-        margin-bottom: 15px;
-        display: block;
-        margin-left: 70px
-    }
-
-    .vtimeline-icon {
-        margin-left: 0
-    }
-
-    .vtimeline-content {
-        margin-left: 70px
-    }
-}
-
 @media only screen and (max-width: 992px) {
     #lead {
         height: auto;
@@ -1219,7 +1136,7 @@ footer {
 }
 
 .company-logo img:hover {
-    /*transform: scale(1.06);*/
+    transform: scale(1.09);
     cursor: pointer
 }
 
@@ -1337,19 +1254,19 @@ footer {
 .dark-mode-button {
     margin: 0 auto;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 15px;
     width: 70px;
     height: 34px;
     z-index: 11;
-    transition: .3s ease all !important;
+    transition: .6s ease all !important;
     border-radius: 25px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .08), 0 3px 6px rgba(0, 0, 0, .15)
 }
 
 
 .dark-mode-button:hover {
-    /*transform: scale(1.05);*/
+    transform: scale(1.08);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .19), 0 5px 5px rgba(0, 0, 0, .23)
 }
 
@@ -1440,8 +1357,8 @@ input:checked+.slider:before {
 
 .scroller {
     width: 0;
-    height: 10px;
-    background-color: rgb(69, 158, 176);
+    height: 5px;
+    background-color: rgb(77, 176, 196);
     position: fixed;
     z-index: 10000000;
 }
