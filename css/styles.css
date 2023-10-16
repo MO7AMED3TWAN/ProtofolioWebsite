@@ -329,7 +329,7 @@ footer {
     display: block;
     transition: color var(--color-mode-transition);
     color: var(--footer-text);
-    padding: 50px;
+    padding: 10px;
     transition: transform .1s !important
 }
 .social a {
