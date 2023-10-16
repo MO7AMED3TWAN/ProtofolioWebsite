@@ -225,7 +225,7 @@ footer {
         width: 100% !important;
         margin-bottom: 5px
     }
-    
+
     .social0 {
         order: 2;
         margin: 8px 0;
@@ -325,7 +325,7 @@ footer {
 }
 
 .social0 a {
-    font-size: 120px;
+    font-size: 80px;
     display: block;
     transition: color var(--color-mode-transition);
     color: var(--footer-text);
